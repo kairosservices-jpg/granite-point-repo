@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Team | Granite Point Physical Therapy</title>
+    <meta name="description" content="Meet the highly trained, licensed physical therapists at Granite Point Physical Therapy in Sandpoint and Athol.">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .page-header {
+            background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('./assets/hero_therapy.png') center/cover no-repeat;
+            padding: 150px 20px 80px;
+            text-align: center;
+            color: var(--color-bg-white);
+        }
+        .page-header h1 {
+            font-size: 3.5rem;
+            margin-bottom: 1rem;
+            color: var(--color-white);
+        }
+        .page-header p {
+            font-size: 1.25rem;
+            max-width: 600px;
+            margin: 0 auto;
+            color: rgba(255, 255, 255, 0.9);
+        }
+        .team-list {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+        .team-member-full {
+            display: flex;
+            gap: 3rem;
+            margin-bottom: 3rem;
+            align-items: flex-start;
+            background: var(--color-bg-white);
+            padding: 3rem;
+            border-radius: 12px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .team-member-full:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 40px rgba(0, 128, 255, 0.1);
+        }
+        .team-member-img {
+            border-radius: 50%;
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+            object-position: center 20%;
+            flex-shrink: 0;
+            border: 4px solid var(--color-bg-gray);
+        }
+        .team-member-info {
+            flex: 1;
+        }
+        .team-member-name {
+            margin-bottom: 0.5rem;
+            text-align: left;
+            font-size: 2rem;
+            color: var(--color-text-dark);
+        }
+        .team-member-title {
+            font-weight: 600;
+            color: var(--color-primary);
+            margin-bottom: 1.5rem;
+            font-size: 1.1rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        .team-member-bio p {
+            margin-bottom: 1rem;
+            line-height: 1.8;
+            color: var(--color-text);
+        }
+        .team-member-bio p:last-child {
+            margin-bottom: 0;
+        }
+
+        @media (max-width: 768px) {
+            .team-member-full {
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+                padding: 2rem;
+            }
+            .team-member-name {
+                text-align: center;
+            }
+            .team-member-bio p {
+                text-align: left;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <a href="index.html" class="nav-logo"><img src="./assets/gp_logo_cropped.png" alt="Granite Point Physical Therapy"></a>
+        <div class="nav-links">
+            <a href="index.html#about">Why Us</a>
+            <a href="index.html#treatments">Specialties</a>
+            <a href="team.html">Our Team</a>
+            <a href="index.html#reviews">Reviews</a>
+            <a href="index.html#contact" class="btn btn-primary btn-nav">Schedule Now</a>
+        </div>
+    </nav>
+
+    <!-- Header -->
+    <header class="page-header">
+        <h1 class="h1">Meet Our Team</h1>
+        <p>Licensed PTs and PTAs with specialized training spanning women's health, orthopedics, persistent pain, vestibular disorders, and more.</p>
+    </header>
+
+    <!-- Team Content -->
+    <section class="section section-light">
+        <div class="container team-list">
+            
+            <!-- Amanda Thome -->
+            <div class="team-member-full fade-in-scroll">
+                <img src="./assets/amanda_thome.avif" alt="Amanda Thome" class="team-member-img">
+                <div class="team-member-info">
+                    <h2 class="h2 team-member-name">Amanda Thome</h2>
+                    <div class="team-member-title">PT, DPT • Sandpoint Clinic</div>
+                    <div class="team-member-bio">
+                        <p>Amanda graduated magna cum laude with her Doctorate in Physical Therapy from Columbia University. She specializes in creating unique, tailored interventions with a primary focus on dizziness, complex vestibular disorders, balance issues, and post-concussion recovery.</p>
+                        <p>Bringing experience from top-ranked rehabilitation facilities, Amanda holds advanced dual certifications in Vestibular and Concussion therapy (AIB-VRC) and is an ImPACT-trained physical therapist. She is also a certified provider for BalanceWear, Parkinson Wellness Recovery (PWR!Moves), and possesses extensive training in craniosacral therapy and headache management. Outside the clinic, she enjoys training for marathons, hiking, and biking with her husband and dachshund, Lucy.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Alexis Creighton -->
+            <div class="team-member-full fade-in-scroll">
+                <img src="./assets/alexis_lee.avif" alt="Alexis Creighton" class="team-member-img">
+                <div class="team-member-info">
+                    <h2 class="h2 team-member-name">Alexis Creighton</h2>
+                    <div class="team-member-title">PT, DPT • Athol Clinic</div>
+                    <div class="team-member-bio">
+                        <p>A Sandpoint native, Alexis earned her Doctor of Physical Therapy degree from George Fox University in 2023. She utilizes a holistic, bio-psycho-social approach—combining manual therapy with active treatment—to prioritize patient autonomy, education, and individualized care.</p>
+                        <p>Alexis holds advanced certifications in fall prevention (Otago), Parkinson Wellness Recovery (PWR!Moves), and is an ImPACT-trained physical therapist for concussion care. She is also trained in blood flow restriction, modern manual therapy, and pelvic floor conditions. Outside the clinic, she loves golfing, paddleboarding, and hiking across North Idaho.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Kerby Andersen -->
+            <div class="team-member-full fade-in-scroll">
+                <img src="./assets/kerby_andersen.avif" alt="Kerby Andersen" class="team-member-img">
+                <div class="team-member-info">
+                    <h2 class="h2 team-member-name">Kerby Andersen</h2>
+                    <div class="team-member-title">PT, DPT • Sandpoint Clinic</div>
+                    <div class="team-member-bio">
+                        <p>An honors graduate from Rocky Mountain University of Health Professions, Kerby brings an athletic background as a former collegiate track and field sprinter and pole vaulter. He believes that every patient has unique needs, utilizing functional movements to create personalized plans of care.</p>
+                        <p>Driven by a desire for lifelong learning, Kerby is a trained Dry Needling provider, former certified personal trainer, and high school track coach. He specializes in orthopedic conditions, injury prevention, strength and conditioning, and balance-related deficits to help active individuals get back to peak performance.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Vashti Graphenteen -->
+            <div class="team-member-full fade-in-scroll">
+                <img src="./assets/vashti_graphenteen.avif" alt="Vashti Graphenteen" class="team-member-img">
+                <div class="team-member-info">
+                    <h2 class="h2 team-member-name">Vashti Graphenteen</h2>
+                    <div class="team-member-title">PT, DPT • Sandpoint Clinic</div>
+                    <div class="team-member-bio">
+                        <p>Vashti earned her Doctorate in Physical Therapy from the University of South Dakota in 2013. She specializes in female pelvic rehabilitation, with a strong clinical focus on treating pelvic pain, bowel and bladder issues, pregnancy care, and postpartum recovery.</p>
+                        <p>Her advanced training includes specialized coursework through Herman & Wallace, the Institute For Birth Healing, myofascial release, and craniosacral therapy. She is also a certified Hesch Sacroiliac Practitioner (HSP) for joint dysfunctions. Outside of work, she enjoys experiencing the beauty of North Idaho with her family.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- John Clark -->
+            <div class="team-member-full fade-in-scroll">
+                <img src="./assets/john_clark.avif" alt="John Clark" class="team-member-img">
+                <div class="team-member-info">
+                    <h2 class="h2 team-member-name">John Clark</h2>
+                    <div class="team-member-title">PT, DPT • Sandpoint Clinic</div>
+                    <div class="team-member-bio">
+                        <p>With a diverse background in wildlife management and the outdoors, John shifted careers to earn his Doctorate in Physical Therapy from Idaho State University. He is deeply passionate about improving patients' movement capacities and performance to elevate their quality of life.</p>
+                        <p>John specializes in treating orthopedic, spinal, and neuromuscular conditions, holding advanced certifications in dry needling, fall prevention, and specialized manual techniques. When not in the clinic, he stays highly active camping, fishing, hunting, and hiking with his family and dogs.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Leola Hall -->
+            <div class="team-member-full fade-in-scroll">
+                <img src="./assets/leola_hall.avif" alt="Leola Hall" class="team-member-img">
+                <div class="team-member-info">
+                    <h2 class="h2 team-member-name">Leola Hall</h2>
+                    <div class="team-member-title">PT • Athol Clinic</div>
+                    <div class="team-member-bio">
+                        <p>Leola earned her Master's degree in Physical Therapy from Andrews University in 1990. She believes each patient has unique needs, requiring a holistic approach and personalized care to help individuals return to what they love.</p>
+                        <p>Her vast experience spans orthopedic conditions, injury management, sports rehabilitation, and comprehensive cancer care (both during and post-treatment). She is also certified in the Leduc method of Lymphedema management and has advanced training in vestibular rehabilitation and manual therapy. Outside the clinic, Leola enjoys digital photography, hiking, and hot air ballooning.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Jessica Robinson -->
+            <div class="team-member-full fade-in-scroll">
+                <img src="./assets/jessica_robinson.avif" alt="Jessica Robinson" class="team-member-img">
+                <div class="team-member-info">
+                    <h2 class="h2 team-member-name">Jessica Robinson</h2>
+                    <div class="team-member-title">PTA • Sandpoint Clinic</div>
+                    <div class="team-member-bio">
+                        <p>With a background instructing yoga and alpine skiing, Jessica developed a deep interest in movement analysis before completing her Physical Therapist Assistant education in 2012. She blends her passion for optimal movement, stability, and performance to achieve the best patient-centered outcomes.</p>
+                        <p>Her advanced training covers vestibular and concussion rehab, pelvic health, chronic pain management, LSVT BIG, and blood flow restriction (BFR). Recently relocating to Sandpoint after years of visiting, Jessica fuels her passion for healing through mountain biking, skiing, water sports, and exploring the outdoors.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Lindsey Johnson -->
+            <div class="team-member-full fade-in-scroll">
+                <img src="./assets/lindsey_johnson.avif" alt="Lindsey Johnson" class="team-member-img">
+                <div class="team-member-info">
+                    <h2 class="h2 team-member-name">Lindsey Johnson</h2>
+                    <div class="team-member-title">PTA • Athol Clinic</div>
+                    <div class="team-member-bio">
+                        <p>A Coeur d’Alene native, Lindsey is deeply passionate about helping others and making positive impacts in their lives and wellbeing. She graduated from North Idaho College in 2019, driven by a desire to foster health and wellness in her community.</p>
+                        <p>Lindsey brings a wealth of clinical knowledge, with extensive training in balance and vestibular disorders, modern manual therapy for orthopedic conditions, and specialized care for pelvic floor disorders and lymphedema. Outside of work, she enjoys hiking, camping, kayaking, and taking long drives with her family and two dogs.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Aimee -->
+            <div class="team-member-full fade-in-scroll">
+                <img src="./assets/aimee.avif" alt="Aimee" class="team-member-img">
+                <div class="team-member-info">
+                    <h2 class="h2 team-member-name">Aimee</h2>
+                    <div class="team-member-title">PTA • Sandpoint & Athol Clinics</div>
+                    <div class="team-member-bio">
+                        <p>Aimee is a compassionate Physical Therapist Assistant with over 15 years of diverse clinical experience spanning acute care, outpatient clinics, and aquatics. She is deeply committed to helping others heal, grow stronger, and regain their independence.</p>
+                        <p>She holds continuing education in fall prevention, stroke recovery, pain management, post-operative orthopedic recovery, and manual therapy. Also an ACE-certified personal trainer, Aimee blends her clinical expertise with a focus on functional strength. Away from work, she is passionate about animal rescue, the outdoors, fly fishing, snowboarding, and spending time with her family.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Susan Colman -->
+            <div class="team-member-full fade-in-scroll">
+                <img src="./assets/susan_colman.avif" alt="Susan Colman" class="team-member-img">
+                <div class="team-member-info">
+                    <h2 class="h2 team-member-name">Susan Colman</h2>
+                    <div class="team-member-title">Office Administrator • Sandpoint & Athol Clinics</div>
+                    <div class="team-member-bio">
+                        <p>Susan brings over two decades of experience helping run Physical Therapy and Chiropractic practices. With a background rooted in creative arts and alternative healing, she is a Certified Holistic Health Counselor and a strong believer in combining Eastern and Western medicine for comprehensive wellness.</p>
+                        <p>Also a Reiki Master since 2006, Susan has spent years guiding clients toward healthier lifestyles through whole foods, exercise, meditation, and energy work. Now residing in the beautiful Selle Valley of Sandpoint, she provides a warm, welcoming presence for all clinic patients.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Heidi Van Allen -->
+            <div class="team-member-full fade-in-scroll">
+                <img src="./assets/heidi_van_allen.avif" alt="Heidi Van Allen" class="team-member-img">
+                <div class="team-member-info">
+                    <h2 class="h2 team-member-name">Heidi Van Allen</h2>
+                    <div class="team-member-title">Reception / Patient Coordinator • Athol Clinic</div>
+                    <div class="team-member-bio">
+                        <p>An Idaho native, Heidi brings warmth, compassion, and a genuine passion for helping others to our team. Transitioning from a successful career in sales, she discovered a love for connecting with people that inspired her new path in the medical field.</p>
+                        <p>Currently studying to become a surgical technologist, Heidi combines her interpersonal strengths with clinical knowledge to ensure patients feel informed, cared for, and empowered on their journey to wellness. Outside the office, she enjoys an active lifestyle full of golf, softball, hiking, and travel.</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Footer specific to this page can just link back, etc. -->
+    <section class="section section-gray">
+        <div class="container text-center">
+            <h2 class="h2">Have questions for our team?</h2>
+            <p style="margin-bottom: 2rem;">We are happy to jump on a brief call to see if we're the right fit for your needs.</p>
+            <a href="index.html#contact" class="btn btn-primary" style="padding: 1rem 3rem;">Contact Us</a>
+        </div>
+    </section>
+
+    <!-- Scripts -->
+    <script src="script.js"></script>
+</body>
+</html>
