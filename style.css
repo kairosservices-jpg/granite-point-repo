@@ -122,9 +122,16 @@ img { max-width: 100%; height: auto; display: block; }
 .insurance-grid:hover { animation-play-state: paused; opacity: 1; }
 .insurance-logo { flex-shrink: 0; font-size: 1.5rem; font-weight: 700; color: var(--color-text-light); font-family: var(--font-heading); white-space: nowrap; transition: opacity 0.3s ease; }
 @keyframes scroll-left { 0% { transform: translateX(0); } 100% { transform: translateX(calc(-50% - 2rem)); } }
-.cta-banner { background: var(--color-accent-light); border-radius: var(--radius-lg); padding: 4rem; text-align: center; margin-top: 2rem; }
-.cta-banner h2 { color: var(--color-accent); margin-bottom: 1.5rem; }
-.cta-actions { display: flex; justify-content: center; gap: 1rem; margin-top: 2rem; flex-wrap: wrap; }
+.cta-banner { background: var(--color-bg-white); border-radius: var(--radius-lg); padding: 4rem; text-align: center; margin-top: 2rem; box-shadow: 0 10px 40px rgba(0,0,0,0.05); }
+.cta-banner h2 { color: var(--color-primary-dark); margin-bottom: 1.5rem; }
+.contact-form { max-width: 600px; margin: 2.5rem auto 0; text-align: left; }
+.form-row { display: flex; gap: 1.5rem; margin-bottom: 1.5rem; }
+.form-group { flex: 1; display: flex; flex-direction: column; margin-bottom: 1.5rem; }
+.form-row .form-group { margin-bottom: 0; }
+.form-label { font-size: 0.9rem; font-weight: 500; color: var(--color-text); margin-bottom: 0.5rem; }
+.form-control { width: 100%; padding: 0.8rem 1rem; border: 1px solid var(--color-border); border-radius: var(--radius-sm); font-family: var(--font-body); font-size: 1rem; color: var(--color-text); transition: border-color 0.3s ease, box-shadow 0.3s ease; }
+.form-control:focus { outline: none; border-color: var(--color-primary); box-shadow: 0 0 0 3px rgba(0, 114, 255, 0.1); }
+textarea.form-control { resize: vertical; min-height: 120px; }
 
 /* Chatbot UI */
 .chatbot-widget { position: fixed; bottom: 30px; right: 30px; z-index: 1000; }
