@@ -128,9 +128,9 @@ img { max-width: 100%; height: auto; display: block; }
 .form-row { display: flex; gap: 1.5rem; margin-bottom: 1.5rem; }
 .form-group { flex: 1; display: flex; flex-direction: column; margin-bottom: 1.5rem; }
 .form-row .form-group { margin-bottom: 0; }
-.form-label { font-size: 0.9rem; font-weight: 500; color: var(--color-text); margin-bottom: 0.5rem; }
-.form-control { width: 100%; padding: 0.8rem 1rem; border: 1px solid var(--color-border); border-radius: var(--radius-sm); font-family: var(--font-body); font-size: 1rem; color: var(--color-text); transition: border-color 0.3s ease, box-shadow 0.3s ease; }
-.form-control:focus { outline: none; border-color: var(--color-primary); box-shadow: 0 0 0 3px rgba(0, 114, 255, 0.1); }
+.form-label { display: block; font-size: 0.85rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.5px; color: var(--color-text-light); margin-bottom: 0.5rem; }
+.form-control { width: 100%; padding: 1rem 1.25rem; background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 8px; font-family: var(--font-body); font-size: 1rem; color: var(--color-text); transition: all 0.3s ease; }
+.form-control:focus { background: #ffffff; border-color: var(--color-primary); box-shadow: 0 0 0 4px rgba(0, 114, 255, 0.1); outline: none; }
 textarea.form-control { resize: vertical; min-height: 120px; }
 
 /* Chatbot UI */
