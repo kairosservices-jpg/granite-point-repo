@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | Granite Point Physical Therapy</title>
+    <meta name="description" content="Contact Granite Point Physical Therapy. Schedule an appointment at our Sandpoint or Athol clinics today.">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .page-header {
+            background: linear-gradient(135deg, rgba(0, 71, 143, 0.9) 0%, rgba(15, 23, 42, 0.95) 100%);
+            padding: 150px 20px 80px;
+            text-align: center;
+            color: var(--color-bg-white);
+        }
+        .page-header h1 {
+            font-size: 3.5rem;
+            margin-bottom: 1rem;
+            color: var(--color-white);
+        }
+        .page-header p {
+            font-size: 1.25rem;
+            max-width: 600px;
+            margin: 0 auto;
+            color: rgba(255, 255, 255, 0.9);
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <a href="index.html" class="nav-logo"><img src="./assets/gp_logo_cropped.png" alt="Granite Point Physical Therapy"></a>
+        <div class="nav-links">
+            <a href="index.html#about">Why Us</a>
+            <a href="index.html#treatments">Specialties</a>
+            <a href="team.html">Our Team</a>
+            <a href="index.html#reviews">Reviews</a>
+            <a href="contact.html" class="btn btn-primary btn-nav">Contact Us</a>
+        </div>
+    </nav>
+
+    <!-- Header -->
+    <header class="page-header">
+        <h1 class="h1">Contact Us</h1>
+        <p>Take the first step towards recovery. Send us a message or schedule your comprehensive evaluation today.</p>
+    </header>
+
+    <!-- Contact Layout -->
+    <section class="section section-light">
+        <div class="container">
+            <div class="contact-layout">
+                
+                <!-- Locations Column -->
+                <div class="locations-column">
+                    <h2 class="h2" style="margin-bottom: 2rem;">Our Clinics</h2>
+                    <div class="location-card">
+                        <h3 class="h3">Granite Point PT & Aquatics</h3>
+                        <p class="location-address">1301 N Division,<br>Sandpoint, ID 83864</p>
+                    </div>
+                    <div class="location-card">
+                        <h3 class="h3">Granite Point PT & Wellness</h3>
+                        <p class="location-address">6101 Hwy 54, Unit J<br>Athol, ID 83801</p>
+                    </div>
+                </div>
+
+                <!-- Form Column -->
+                <div class="form-column">
+                    <div class="contact-form-wrapper">
+                        <h2 class="h2" style="margin-bottom: 2rem;">Send a Message</h2>
+                        <form class="contact-form" action="#" method="POST" style="margin:0;">
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label class="form-label" for="name">Name</label>
+                                    <input type="text" id="name" name="name" class="form-control" required placeholder="John Doe">
+                                </div>
+                                <div class="form-group">
+                                    <label class="form-label" for="phone">Phone Number</label>
+                                    <input type="tel" id="phone" name="phone" class="form-control" required placeholder="(555) 555-5555">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label" for="email">Email</label>
+                                <input type="email" id="email" name="email" class="form-control" required placeholder="john@example.com">
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label" for="message">Message</label>
+                                <textarea id="message" name="message" class="form-control" placeholder="How can we help you?" required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary" style="width: 100%;">Send Message</button>
+                        </form>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer specific to this page can just link back, etc. -->
+    <section class="section section-gray">
+        <div class="container text-center">
+            <h2 class="h2">Need immediate assistance?</h2>
+            <p style="margin-bottom: 2rem;">Give us a call directly to speak with our front desk team.</p>
+            <a href="tel:5551234567" class="btn btn-primary" style="padding: 1rem 3rem;">Call Now</a>
+        </div>
+    </section>
+
+    <!-- Scripts -->
+    <script src="script.js"></script>
+</body>
+</html>
