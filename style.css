@@ -152,6 +152,65 @@ textarea.form-control { resize: vertical; min-height: 120px; }
 @keyframes slideDown { from { transform: translateY(-100%); } to { transform: translateY(0); } }
 @keyframes slideUp { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
 
+/* Reviews Carousel */
+.reviews-carousel-container {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+.reviews-track {
+  display: flex;
+  transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+  width: 100%;
+}
+.reviews-track .review-card {
+  flex: 0 0 calc(50% - 1rem); /* 2 reviews at a time with gap */
+  margin: 0.5rem;
+  box-sizing: border-box;
+}
+.carousel-btn {
+  background: var(--color-white);
+  border: 2px solid var(--color-accent);
+  color: var(--color-accent);
+  border-radius: 50%;
+  width: 44px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: var(--transition);
+  box-shadow: var(--shadow-sm);
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+.carousel-btn:hover {
+  background: var(--color-accent);
+  color: var(--color-white);
+  transform: scale(1.05);
+}
+.carousel-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: rgba(0, 128, 255, 0.2);
+  cursor: pointer;
+  transition: var(--transition);
+}
+.carousel-dot.active {
+  background: var(--color-accent);
+  transform: scale(1.2);
+}
+
+@media (max-width: 768px) {
+  .reviews-track .review-card {
+    flex: 0 0 100%;
+    margin: 0.5rem 0;
+  }
+}
+
 @media (max-width: 900px) {
   .trust-badges { grid-template-columns: 1fr; gap: 1.5rem; padding: 2rem; }
   .trust-badges-wrapper { transform: translateY(-20px); }
