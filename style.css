@@ -202,6 +202,7 @@ textarea.form-control { resize: vertical; min-height: 120px; }
 @media (max-width: 900px) {
   .trust-badges { grid-template-columns: 1fr; gap: 1.5rem; padding: 2rem; }
   .trust-badges-wrapper { transform: translateY(-20px); }
+  .navbar { justify-content: center; }
   .nav-links { display: none; }
   .treatments-grid { grid-template-columns: 1fr; }
   .cta-banner { padding: 2.5rem 1.5rem; }
