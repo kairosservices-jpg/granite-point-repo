@@ -32,7 +32,6 @@ document.addEventListener('DOMContentLoaded', () => {
     const track = document.getElementById('reviewsTrack');
     const prevBtn = document.getElementById('prevReview');
     const nextBtn = document.getElementById('nextReview');
-    const dotsContainer = document.getElementById('carouselDots');
 
     if (track && prevBtn && nextBtn) {
         const cards = Array.from(track.children);
@@ -42,29 +41,6 @@ document.addEventListener('DOMContentLoaded', () => {
         // Function to determine how many cards are visible
         const getVisibleCardsCount = () => {
             return window.innerWidth > 768 ? 2 : 1;
-        };
-
-        const getMaxIndex = () => {
-            return cards.length - getVisibleCardsCount();
-        };
-
-        // Create navigation dots
-        const createDots = () => {
-            if (!dotsContainer) return;
-            dotsContainer.innerHTML = '';
-            const visibleCount = getVisibleCardsCount();
-            const totalDots = cards.length - visibleCount + 1;
-            
-            for (let i = 0; i < totalDots; i++) {
-                const dot = document.createElement('div');
-                dot.classList.add('carousel-dot');
-                if (i === currentIndex) dot.classList.add('active');
-                dot.addEventListener('click', () => {
-                    goToSlide(i);
-                    resetAutoPlay();
-                });
-                dotsContainer.appendChild(dot);
-            }
         };
 
         const updateCarousel = () => {
@@ -79,23 +55,6 @@ document.addEventListener('DOMContentLoaded', () => {
             const translation = currentIndex * cardWidthPercent;
             
             track.style.transform = `translateX(-${translation}%)`;
-
-            // Update dots
-            if (dotsContainer) {
-                const dots = Array.from(dotsContainer.children);
-                dots.forEach((dot, index) => {
-                    if (index === currentIndex) {
-                        dot.classList.add('active');
-                    } else {
-                        dot.classList.remove('active');
-                    }
-                });
-            }
-        };
-
-        const goToSlide = (index) => {
-            currentIndex = index;
-            updateCarousel();
         };
 
         const nextSlide = () => {
@@ -128,12 +87,11 @@ document.addEventListener('DOMContentLoaded', () => {
             resetAutoPlay();
         });
 
-        // Initialize dots & alignment on window resize
+        // Initialize alignment on window resize
         let resizeTimer;
         window.addEventListener('resize', () => {
             clearTimeout(resizeTimer);
             resizeTimer = setTimeout(() => {
-                createDots();
                 updateCarousel();
             }, 100);
         });
@@ -148,7 +106,6 @@ document.addEventListener('DOMContentLoaded', () => {
         };
 
         // Initialize
-        createDots();
         updateCarousel();
         startAutoPlay();
     }

@@ -191,18 +191,6 @@ textarea.form-control { resize: vertical; min-height: 120px; }
   color: var(--color-white);
   transform: scale(1.05);
 }
-.carousel-dot {
-  width: 10px;
-  height: 10px;
-  border-radius: 50%;
-  background: rgba(0, 128, 255, 0.2);
-  cursor: pointer;
-  transition: var(--transition);
-}
-.carousel-dot.active {
-  background: var(--color-accent);
-  transform: scale(1.2);
-}
 
 @media (max-width: 768px) {
   .reviews-track .review-card {
