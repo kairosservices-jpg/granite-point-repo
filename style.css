@@ -60,6 +60,7 @@ img { max-width: 100%; height: auto; display: block; }
 .navbar.scrolled { position: fixed; animation: slideDown 0.3s ease; }
 .nav-logo { display: flex; align-items: center; text-decoration: none; }
 .nav-logo img { height: 35px; width: auto; max-width: 100%; }
+.nav-mobile-tel { display: none; }
 .nav-links { display: flex; gap: 2rem; align-items: center; }
 .nav-links a { color: var(--color-text); font-weight: 500; font-size: 0.95rem; }
 .nav-links a:hover { opacity: 0.8; color: var(--color-accent); }
@@ -202,8 +203,11 @@ textarea.form-control { resize: vertical; min-height: 120px; }
 @media (max-width: 900px) {
   .trust-badges { grid-template-columns: 1fr; gap: 1.5rem; padding: 2rem; }
   .trust-badges-wrapper { transform: translateY(-20px); }
-  .navbar { justify-content: center; }
+  .navbar { flex-direction: column; gap: 0.5rem; justify-content: center; align-items: center; padding: 0.75rem 5%; }
+  .nav-mobile-tel { display: block; font-size: 0.9rem; font-weight: 700; color: var(--color-text-light); text-decoration: none; transition: var(--transition); }
+  .nav-mobile-tel:hover { color: var(--color-accent); }
   .nav-links { display: none; }
+  .hero { padding-top: 110px; }
   .treatments-grid { grid-template-columns: 1fr; }
   .cta-banner { padding: 2.5rem 1.5rem; }
   .section { padding: 4rem 0; }
